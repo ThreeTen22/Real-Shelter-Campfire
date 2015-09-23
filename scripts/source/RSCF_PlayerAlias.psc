@@ -1,0 +1,1 @@
+Scriptname RSCF_PlayerAlias   
