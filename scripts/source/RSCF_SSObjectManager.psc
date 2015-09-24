@@ -39,8 +39,8 @@ State Active
 	EndEvent
 
 	Event OnUpdate()
-		(akPHR as RSCF_SpawnSystem).GoToState("Active")
-		(akPHL as RSCF_SpawnSystem).GoToState("Active")
+		akPHR.GoToState("Active")
+		akPHL.GoToState("Active")
 		While (akPHR as RSCF_SpawnSystem).isReady == false
 			Utility.Wait(0.1)
 		EndWhile
@@ -62,8 +62,8 @@ State Shutdown
 	EndEvent
 
 	Event OnUpdate()
-		(akPHR as RSCF_SpawnSystem).GoToState("Shutdown")
-		(akPHL as RSCF_SpawnSystem).GoToState("Shutdown")
+		akPHR.GoToState("Shutdown")
+		akPHL.GoToState("Shutdown")
 		While (akPHR as RSCF_SpawnSystem).isReady == false
 			Utility.Wait(0.1)
 		EndWhile
